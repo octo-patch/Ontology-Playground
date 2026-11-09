@@ -39,7 +39,7 @@ export const createMiniMaxConnector: ConnectorFactory = ({ environment, fetch })
   }
   if (
     base.protocol !== 'https:'
-    || !['api.minimax.io', 'api.minimax.cn', 'api.minimaxi.com'].includes(base.hostname)
+    || !['api.minimax.io', 'api.minimaxi.com'].includes(base.hostname)
     || base.username || base.password || base.port
     || !/^\/v1\/*$/.test(base.pathname) || base.search || base.hash
   ) {

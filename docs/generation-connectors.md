@@ -51,7 +51,7 @@ are not evidence of deployed authentication. Use HTTPS in production.
 | `AZURE_OPENAI_API_KEY` | required for Azure | Server-only provider credential |
 | `AZURE_OPENAI_DEPLOYMENT` | `gpt-4o-mini` | Server-selected deployment |
 | `MINIMAX_API_KEY` | required for MiniMax | Server-only provider credential when `AI_CONNECTOR=minimax` |
-| `MINIMAX_BASE_URL` | `https://api.minimax.io/v1` | Direct API base; China: `https://api.minimax.cn/v1`; existing `https://api.minimaxi.com/v1` settings also accepted |
+| `MINIMAX_BASE_URL` | `https://api.minimax.io/v1` | Direct API base; China: `https://api.minimaxi.com/v1` |
 | `MINIMAX_MODEL` | `MiniMax-M3.1-Flash` | Current models: Flash first, then `MiniMax-M3`; explicit server model overrides are passed through |
 
 The MiniMax adapter sends the business description to the selected direct API
@@ -69,8 +69,8 @@ thinking, `none` effort, or `service_tier`. Truncated output and invalid JSON fa
 without retry. This is a single-turn text adapter with no conversation history
 or tools. It uses the same response-size bound and deadline as the reference
 adapter; complex descriptions can exceed these bounds and fail safely.
-See the official [global API](https://platform.minimax.io/docs/api-reference/text-openai-api.md)
-and [China API](https://platform.minimaxi.com/docs/api-reference/text-openai-api.md)
+See the official [global API](https://platform.minimax.io/docs/api-reference/text-chat-openai.md)
+and [China API](https://platform.minimaxi.com/docs/api-reference/text-chat-openai.md)
 contracts. No browser credential, model, or destination override is accepted.
 
 HTTP origins are allowed only for explicitly configured loopback development

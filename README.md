@@ -411,8 +411,8 @@ been verified. Azure retains `AZURE_OPENAI_ENDPOINT`,
 For MiniMax, set `AI_CONNECTOR=minimax` and the server-only `MINIMAX_API_KEY`.
 `MINIMAX_MODEL` defaults to `MiniMax-M3.1-Flash`; `MiniMax-M3` is the other
 current model, and explicit model overrides are preserved. `MINIMAX_BASE_URL`
-defaults to `https://api.minimax.io/v1`; use `https://api.minimax.cn/v1` for the
-China API (`https://api.minimaxi.com/v1` is also accepted for existing settings).
+defaults to `https://api.minimax.io/v1`; use `https://api.minimaxi.com/v1` for
+the China API.
 The business description is sent to the selected provider after destination
 consent. Changing its endpoint or model requires renewed consent.
 The reference adapter accepts only HTTPS resource endpoints under

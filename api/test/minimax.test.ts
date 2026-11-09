@@ -60,8 +60,6 @@ describe('MiniMax connector request boundary', () => {
   it.each([
     [undefined, undefined, 'https://api.minimax.io', 'MiniMax-M3.1-Flash'],
     ['https://api.minimaxi.com/v1///', undefined, 'https://api.minimaxi.com', 'MiniMax-M3.1-Flash'],
-    ['https://api.minimax.cn/v1', undefined, 'https://api.minimax.cn', 'MiniMax-M3.1-Flash'],
-    ['https://api.minimax.cn/v1/', 'MiniMax-M3', 'https://api.minimax.cn', 'MiniMax-M3'],
     [undefined, 'MiniMax-M3', 'https://api.minimax.io', 'MiniMax-M3'],
     ['https://api.minimaxi.com/v1', 'MiniMax-M3', 'https://api.minimaxi.com', 'MiniMax-M3'],
     [undefined, 'MiniMax-M2.7', 'https://api.minimax.io', 'MiniMax-M2.7'],
@@ -114,6 +112,7 @@ describe('MiniMax connector request boundary', () => {
 
   it.each([
     'http://api.minimax.io/v1', 'https://api.minimax.io.evil.test/v1',
+    'https://api.minimax.cn/v1',
     'https://api.minimax.io@evil.test/v1', 'https://user:secret@api.minimax.io/v1',
     'https://127.0.0.1/v1', 'https://169.254.169.254/v1',
     'https://api.minimax.io:8443/v1', 'https://api.minimax.io/proxy/v1',
